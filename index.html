@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6117448cea.js" crossorigin="anonymous"></script>
+    <title>To-Do List App</title>
+</head>
+<body>
+    <div class="allTask">
+        <div class="head">
+            <h1 class="title" >Ma Todolist</h1>           
+            <p class="headDesc">Organisez vos tâches avec style et efficacité</p>
+        </div>
+        <div class="subHead">
+            <div class="eachCase">
+                <i class="fa-solid fa-circle-check"></i>
+                <div class="text">
+                    <p class="textCase">
+                        <span class="textCaseSpan">Tâches terminées</span>
+                        <span class="textCaseSpan2">0</span>
+                    </p>
+                </div>
+            </div>
+            <div class="eachCase">
+                <i class="fa-solid fa-microchip"></i>
+                <div class="text">
+                    <p class="textCase">
+                        <span class="textCaseSpan">Tâches en cours</span>
+                        <span class="textCaseSpan2">0</span>
+                    </p>
+                </div>
+            </div>
+            <div class="eachCase">
+               <i class="fa-solid fa-circle-exclamation"></i>
+                <div class="text">
+                    <p class="textCase">
+                        <span class="textCaseSpan">Tâches urgentes</span>
+                        <span class="textCaseSpan2">0</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="serch">
+            <input type="text" class="champ" id="search" placeholder="Rechercher une tâche...">
+            <select name="" id="filtre">
+                <option value="all">Toutes les tâches</option>
+                <option value="completed">Tâches terminées</option>
+                <option value="in-progress">Tâches en cours</option>
+                <option value="urgent">Tâches urgentes</option>
+            </select>
+        </div>
+        <div class="addTask">
+            <input type="text" id="taskInput" class="champ" placeholder="Ajouter une nouvelle tâche...">
+            <button id="addTaskButton">Ajouter</button>
+            <div class="allChoise">
+                <select name="" id="choiseCat">
+                    <option value="moyenne">Moyenne</option>
+                    <option value="basse">Basse</option>
+                    <option value="urgente">Urgente</option>
+                </select>
+                <input type="text" class="champ" placeholder="Categorie">
+                <input type="date" class="date">
+            </div>
+        </div>
+        <div class="allTask">
+            <div class="task">
+                <p class="name-task">Manger</p>
+                <button class ="btn-edit" ><i class="fa-regular fa-pen-to-square"></i></button>
+                <button class ="btn-delete" ><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

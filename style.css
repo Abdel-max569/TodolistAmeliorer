@@ -1,0 +1,185 @@
+@import url('fonts.googleapis.com');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #fdf8f5;
+    color: #3e2723;
+    padding: 20px;
+}
+
+.allTask {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.head {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #4e342e;
+    letter-spacing: -1px;
+}
+
+.headDesc {
+    color: #8d6e63;
+    font-weight: 400;
+}
+
+.subHead {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.eachCase {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #efebe9;
+    transition: transform 0.2s ease;
+}
+
+.eachCase:hover {
+    transform: translateY(-5px);
+}
+
+.eachCase i {
+    font-size: 1.5rem;
+    color: #a1887f;
+}
+
+.textCaseSpan {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #a1887f;
+    font-weight: 600;
+}
+
+.textCaseSpan2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #3e2723;
+}
+
+.serch,
+.addTask {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(62, 39, 35, 0.05);
+}
+
+.champ,
+.date,
+#filtre,
+#choiseCat {
+    background: #f8f5f2;
+    border: 1px solid #e0d7d5;
+    border-radius: 12px;
+    padding: 12px 15px;
+    color: #3e2723;
+    font-weight: 500;
+}
+
+.champ:focus {
+    outline: none;
+    border-color: #8d6e63;
+    background: #fff;
+}
+
+#addTaskButton {
+    background-color: #3e2723;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 12px;
+    height: 40px;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#addTaskButton:hover {
+    background-color: #5d4037;
+}
+
+.task {
+    background: #ffffff;
+    margin-bottom: 12px;
+    padding: 15px 25px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #a1887f;
+}
+
+.name-task {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: 600;
+    color: #4e342e;
+}
+
+.btn-edit,
+.btn-delete {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.btn-edit {
+    color: #a1887f;
+}
+
+.btn-delete {
+    color: #d7ccc8;
+}
+
+.btn-delete:hover {
+    color: #cc3300;
+}
+
+.btn-edit:hover {
+    color: #3e2723;
+}
+
+@media (max-width: 600px) {
+
+    .serch,
+    .addTask,
+    .allChoise {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .champ,
+    #search,
+    #addTaskButton, 
+    .date,
+    #choiseCat{
+        width: 100% ;
+        margin-top: 10px;
+    }
+    
+}
